@@ -78,6 +78,31 @@
     .dropdown:hover .dropdown-menu {
       display: block;
     }
+    
+     .page-header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      background-color: white;
+    }
+
+  .page-header h1 {
+      color: #bd4f74;
+      font-size: 36px;
+      margin: 0;
+      animation: fadeInSlide 1.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
@@ -97,8 +122,10 @@
       <li><a href="#contact">contact</a></li>
     </ul>
   </nav>
-  
-<section id="branding" style="background: white; padding: 60px 20px; text-align: center;">
+   <div class="page-header">
+    <h1>rebrand/strategy projects</h1>
+  </div>
+<section id="branding" style="background: white; padding: 10px 20px; text-align: center;">
   <h2 style="color: #d46e91;">project 1: MoodBloom app</h2>
   <div style="max-width: 900px; margin: 30px auto;">
     <img src="moodbloom app.png" alt="WYAWYG Rebrand" style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
